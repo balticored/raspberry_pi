@@ -64,6 +64,8 @@ helm install --namespace minecraft minecraft -f values.yaml itzg/minecraft
 ## ingress-nginx
 
 ```
+kubectl delete -n kube-system all,secrets,pvc -l release=traefik
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 helm repo update
