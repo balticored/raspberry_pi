@@ -18,22 +18,17 @@ readinessProbe:
   periodSeconds: 60
 
 minecraftServer:
-  # This must be overridden, since we can't accept this for the user.
   eula: "TRUE"
 
   # One of: LATEST, SNAPSHOT, or a specific version (ie: "1.7.9").
   version: "LATEST"
   # This can be one of "VANILLA", "FORGE", "SPIGOT", "BUKKIT", "PAPER", "FTB", "SPONGEVANILLA"
   type: "PAPER"
-
-  # Max view distance (in chunks).
+  
   viewDistance: 7
 
-  # Message of the Day
   motd: "Welcome to Minecraft on Kubernetes on Rapsberry Pi!"
 
-  # If you adjust this, you may need to adjust resources.requests above to match.
-  # If you are running on raspberry pi 4 you can utilize a lot more
   memory: 512M
 
 persistence:
@@ -46,6 +41,5 @@ persistence:
   ##
   # storageClass: "-"
   dataDir:
-    # Set this to false if you don't care to persist state between restarts.
     enabled: true
     Size: 10Gi
