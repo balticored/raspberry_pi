@@ -1,5 +1,11 @@
-# recipe for installing and configuring:
-fish shell, ansible, k3s, helm, minecraft, ingress-nginx
+# recipe for installing:
+- fish shell 
+- ansible
+- k3s
+- helm
+- minecraft server
+- ingress-nginx
+
 on fresh Ubuntu 20.04.2 LTS 32 bit 
 on minimum 2 Raspberry Pi 4B
 
