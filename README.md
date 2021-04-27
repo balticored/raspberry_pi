@@ -30,9 +30,6 @@ vi inventory/groups_vars/all.yml
 
 ansible-playbook site.yml -i inventory/hosts.ini 
 ```
-note: to fetch kubeconfig ssh into master node
-copy kubeconfig contents and paste to local
-WSL Ubuntu environment.
 
 ## Install and configure helm
 
