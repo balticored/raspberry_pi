@@ -75,7 +75,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --set tc
 ```
 
 ## argo-cd
-To install argocd with ARM support, a fork from phillebaba is used.
+To install argocd with ARM support, a fork from alinbalutoiu is used.
 It might be necessary to label node that argocd should be installed on,
 since by default it installs on master node.
 
