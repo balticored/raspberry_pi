@@ -105,6 +105,10 @@ In case pod name does not work as password it's possible to manually set passwor
 ```
 kubectl edit secret argocd-secret -n argocd
 ```
+4. Restart argocd-server pod
+```
+kubectl delete pod <argocd-server-pod_name> -n argocd
+```
 
 To deploy minecraft via argocd-ui
 1. Add repository url via Repositories -> Connect repo using HTTPS
