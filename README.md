@@ -111,10 +111,10 @@ To deploy minecraft via argocd-ui
    https://github.com/itzg/minecraft-server-charts/
 
 2. New app and then fill out configuration settings. 
-   imageTag: multiarch
-   minecraftServer.eula: true
-   minecraftServer.type: PAPER
-   persistence.dataDir.enabled
-   resources.requests.cpu: 2000m
-   resources.requests.memory: 2048Mi
+   - imageTag: multiarch
+   - minecraftServer.eula: true
+   - minecraftServer.type: PAPER
+   - persistence.dataDir.enabled
+   - resources.requests.cpu: 2000m
+   - resources.requests.memory: 2048Mi
 
