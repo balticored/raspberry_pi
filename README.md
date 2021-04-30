@@ -5,6 +5,7 @@
 - helm
 - minecraft server
 - ingress-nginx
+- argo-cd
 
 on fresh Ubuntu 20.04.2 LTS 32 bit 
 on minimum 2 Raspberry Pi 4B
