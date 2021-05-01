@@ -32,9 +32,9 @@ git clone https://github.com/rancher/k3s-ansible
 
 cd k3s-ansible
 
-vi inventory/hosts.ini
+vi inventory/sample/hosts.ini
 
-vi inventory/groups_vars/all.yml
+vi inventory/sample/groups_vars/all.yml
 
 ansible-playbook site.yml -i inventory/hosts.ini 
 ```
