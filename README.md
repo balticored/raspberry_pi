@@ -7,7 +7,7 @@
 - ingress-nginx
 - argo-cd
 
-on fresh Ubuntu 20.04.2 LTS 32 bit 
+on fresh Ubuntu 20.04.2 LTS 64 bit 
 on minimum 2 Raspberry Pi 4B
 
 note: commands below are for local Ubuntu environment (not k3s master or worker nodes)
