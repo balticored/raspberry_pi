@@ -97,11 +97,6 @@ kubectl port-forward service/my-argocd-server -n argocd 8080:443
 Now argo-cd ui should be accessible from browser via https://localhost:8080
 By default initial credentials are username:admin password:<name of argocd-server pod>
 
-In case pod name does not work as password it's possible to manually set password by
-1. Hash new password with bcrypt https://bcrypt-generator.com/
-2. Base 64 encode hashed password https://www.base64encode.org/
-3. Use kubectl to edit argocd-secret and paste base 64 encoded password hash to 
-   admin.password field
 ```
 kubectl edit secret argocd-secret -n argocd
 ```
